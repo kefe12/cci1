@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="gp" alignment="TOP_LEFT" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cci1.HelloController">
+
+    <Label text="Hello, World!" GridPane.rowIndex="0" />
+    <TextField fx:id="txt1" maxHeight="20" promptText="SSID" GridPane.columnIndex="1" />
+
+    <TextField fx:id="txt2" maxHeight="20" promptText="Studid" GridPane.columnIndex="2" />
+    <TextField fx:id="txt3" maxHeight="20" promptText="FirstName" GridPane.columnIndex="3" />
+    <TextField fx:id="txt4" maxHeight="20" promptText="LastName" GridPane.columnIndex="4" />
+    <TextField fx:id="txt5" maxHeight="20" promptText="Section" GridPane.columnIndex="5" />
+    <TextField fx:id="txt6" maxHeight="20" promptText="Department" GridPane.columnIndex="6" />
+    <Button fx:id="btn" onAction="#handleButtonAction" text="insert!" GridPane.rowIndex="2" />
+    <Button fx:id="btn1" onAction="#selectButtonAction" text="select all!" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+    <Button fx:id="btn3" onAction="#selectDistinictButtonHandle" text="select distinict!" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+    <Button fx:id="btn4" onAction="#selectrowButtonHandle" text="select row!" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <Button fx:id="btn5" onAction="#updateButtonHandle" text="update" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+    <TableView fx:id="tbl" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints maxWidth="149.0" minWidth="149.0" prefWidth="149.0" />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+
+
+</GridPane>
